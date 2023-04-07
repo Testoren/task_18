@@ -300,7 +300,7 @@
     align-items: flex-end;
     border: none;
     background: none;
-    background-image: url(/img/Vector\ \(Row\).svg);
+    background-image: url(../img/Vector\ \(Row\).svg);
     background-position: center;
     background-repeat: no-repeat;
     min-width: 41px;
@@ -315,7 +315,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-image: url(/img/Vector\ \(Stroke\).svg);
+    background-image: url(../img/Vector\ \(Stroke\).svg);
     background-repeat: no-repeat;
 }
 
@@ -373,13 +373,13 @@
 
 
 .control__logo_camera {
-    background-image: url(/img/VectorCamera.svg);
+    background-image: url(../img/VectorCamera.svg);
     width: 32px;
     height: 28px;
 }
 
 .control__video {
-    background-image: url(/img/image\ 6.png);
+    background-image: url(../img/image\ 6.png);
     background-repeat: no-repeat;
     margin-top: 31px;
     min-width: 817px;
@@ -407,7 +407,7 @@
     background: none;
     min-width: 28px;
     min-height: 28px;
-    background-image: url(/img/play.svg);
+    background-image: url(../img/play.svg);
     background-position: right;
     background-repeat: no-repeat;
 }
@@ -602,7 +602,7 @@
 }
 
 .repair__logo_img {
-    background-image: url(/img/option.svg);
+    background-image: url(../img/option.svg);
     background-repeat: no-repeat;
     width: 30px;
     height: 28px;
@@ -626,15 +626,15 @@
 }
 
 .repair__bloke_item:first-child{
-    background-image: url(/img/image1.jpg);
+    background-image: url(../img/image1.jpg);
 }
 
 .repair__bloke_item:nth-child(2){
-    background-image: url(/img/image\ 2.jpg);
+    background-image: url(../img/image\ 2.jpg);
 }
 
 .repair__bloke_item:last-child{
-    background-image: url(/img/image\ 3.jpg);
+    background-image: url(../img/image\ 3.jpg);
 }
 
 .repair__bloke_item-one{
@@ -721,7 +721,7 @@
 
 .block__conteiner_all-left {
     position: relative;
-    background-image: url(/img/back3.png);
+    background-image: url(../img/back3.png);
     background-repeat: no-repeat;
     margin-left: -102px;
     min-height: 645px;
@@ -912,7 +912,7 @@
 }
 
 .block__conteiner_savetext::before{
-    content: url(/img/GroupPig.svg);
+    content: url(../img/GroupPig.svg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -929,7 +929,7 @@
 }
 
 .section__blokeFive{
-    background-image: url(/img/image\ 5.1.png);
+    background-image: url(../img/image\ 5.1.png);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -997,7 +997,7 @@
 }
 
 .blokeFive__all_rightList-imgOne{
-    background-image: url(/img/one.png);
+    background-image: url(../img/one.png);
     background-position: center;
     background-repeat: no-repeat;
     min-width: 354px;
@@ -1006,20 +1006,20 @@
 }
 
 .blokeFive__all_rightList-imgTwo{
-    background-image: url(/img/two.png);
+    background-image: url(../img/two.png);
     background-repeat: no-repeat;
     margin-top: -112px;
 }
 
 .blokeFive__all_rightList-imgThree{
-    background-image: url(/img/three.png);
+    background-image: url(../img/three.png);
     background-repeat: no-repeat;
     min-height: 350px;
     margin-top: 239px;
 }
 
 .blokeFive__all_rightList-imgFor{
-    background-image: url(/img/For.png);
+    background-image: url(../img/For.png);
     background-repeat: no-repeat;
     margin-top: -112px;
     min-height: 624px;
@@ -1051,7 +1051,7 @@
 }
 
 .sectionSix__head_img{
-    background-image: url(/img/hand.svg);
+    background-image: url(../img/hand.svg);
     background-repeat: no-repeat;
     min-width: 34px;
     min-height: 30px;
@@ -1102,17 +1102,17 @@
 }
 
 .photoLeft::before{
-    background: url(/img/photoLeft.png);
+    background: url(../img/photoLeft.png);
     background-repeat: no-repeat;
 }
 
 .photoCenter::before{
-    background: url(/img/photoCenter.png);
+    background: url(../img/photoCenter.png);
     background-repeat: no-repeat;
 }
 
 .photoRight::before{
-    background: url(/img/photoRight.png);
+    background: url(../img/photoRight.png);
     background-repeat: no-repeat;
 }
 
@@ -1159,7 +1159,7 @@
 .sectionSix__content_button-text::before{
     content: '';
     position: absolute;
-    background: url(/img/days.svg);
+    background: url(../img/days.svg);
     background-repeat: no-repeat;
     background-position: center;
     min-width: 34px;
@@ -1170,7 +1170,7 @@
 .sectionSix__content_button-text:nth-of-type(2n+1)::before{
     content: '';
     position: absolute;
-    background: url(/img/plosh.svg);
+    background: url(../img/plosh.svg);
     background-repeat: no-repeat;
     background-position: center;
     min-width: 34px;
@@ -1190,7 +1190,7 @@
 .sectionSityLeft{
     min-width: 100%;
     min-height: 776px;
-    background: url(/img/sity.svg);
+    background: url(../img/sity.svg);
     background-position: right;
 
 }
@@ -1198,7 +1198,7 @@
 .sectionSityRight{
     min-width: 100%;
     min-height: 776px;
-    background: url(/img/Frame.svg);
+    background: url(../img/Frame.svg);
     background-position: left;
 }
 
@@ -1211,7 +1211,7 @@
     grid-template-rows:222px 150px 465fr;
     min-height: 953px;
     min-width: 1440px;
-    background-image: url(/img/image\ 7.2.png);
+    background-image: url(../img/image\ 7.2.png);
     background-color: #131313;
     background-position: center;
     position: relative;
@@ -1350,7 +1350,7 @@
 }
 
 .sectionSeven__location_icons-left{
-    background: url(/img/mail.svg);
+    background: url(../img/mail.svg);
     background-position: center;
     background-repeat: no-repeat;
     min-width: 28px;
@@ -1360,7 +1360,7 @@
 }
 
 .sectionSeven__location_icons-right{
-    background-image: url(/img/insta.svg);
+    background-image: url(../img/insta.svg);
     background-position: center;
     background-repeat: no-repeat;
     min-width: 28px;
@@ -1371,7 +1371,7 @@
 
 .sectionSeven__location_map{
     margin: 0 auto;
-    background-image: url(/img/map.png);
+    background-image: url(../img/map.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
