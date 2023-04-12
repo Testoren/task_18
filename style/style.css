@@ -554,7 +554,6 @@
     background: #E3B873;
     color: #fff;
     justify-content: center;
-    align-self: center;
 }
   
 .fake::before{
@@ -574,6 +573,7 @@
     line-height: 163.68%;
     color: #181818;
     margin: 0;
+    padding: 0;
 }
 
 .repair__title {
