@@ -733,7 +733,7 @@ main{
 /*секция четвертая*/
 
 .sectionFor {
-    margin-top: 133px;
+    margin-top: 120px;
 }
 
 .block__conteiner{
@@ -1059,6 +1059,7 @@ main{
 
 .sectionSix{
     min-height: 643px;
+    min-width: 1256px;
 }
 
 .sectionSix__content_box{
@@ -1100,6 +1101,7 @@ main{
 
 .sectionSix__content{
     display: grid;
+    justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
 }
 
