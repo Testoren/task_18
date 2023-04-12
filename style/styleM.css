@@ -188,10 +188,15 @@
     .control__logo_camera-play{
         min-width: 37px;
         min-height: 37px;
+
     }
     .control__logo_camera-img{
         min-width: 12px;
         min-height: 12px;
+        background-image: url(../img/playMobile.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 12px 12px;
     }
     .control__line_img{
         margin: 28px auto 0;
