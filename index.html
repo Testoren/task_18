@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/styleM.css">
     <title>Document</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
             <div class="number">
                 <a href="#">+7 (928) 768-32-39</a>
             </div>
-            <form action="#"><button class="button">Request a call</button></form>
+            <form action="#"><button class="button button-hidden">Request a call</button></form>
         </div>
     </header>
     <main>
@@ -48,7 +49,10 @@
                 </p>
                 <form action="#">                
                     <button class="button button__main">CALCULATE THE COST</button>
-                    <button class="button button__main button__main_visible">SUBMIT YOUR APPLICATION</button>
+                    <button class="button button__main button__main_visible">
+                        <div class="desktop-text">SUBMIT YOUR APPLICATION</div>
+                        <div class="mobile-text">APPLICATION</div>
+                    </button>
                 </form>
             </div>
             <div class="overlay"></div>
@@ -63,6 +67,11 @@
 
                         <h2 class="head-title">Completed <br> projects</h2>
                         <p class="head-subtitle">Only a small part of the work performed by our company is presented <br> on the site. For 14 years on in the construction <br> market we have made happy more than 1000 families</p>
+
+                        <div class="mobile-img">
+                                <button class="button__mobile_side"></button>
+                                <button class="button__mobile_side"></button>
+                        </div>
 
                         <div class="location">
                             <div class="location-item">
@@ -85,7 +94,6 @@
                         </div>
 
                         <div class="progects-row">
-
                             <button class="button__row-left"></button>
                             <div class="progects-row__circle">
                                 <div class="progects-row__circle_item"></div>
@@ -103,9 +111,7 @@
                             <li class="head-nav__item"><a href="#">Sochi Thieves</a></li>
                             <li class="head-nav__item"><a href="#">Rostov-on-Don Patriotic</a></li>
                         </ul>
-                        <div class="img">
-                            <img src="img/image 2.1.png" alt="img">
-                        </div>
+                        <div class="img"></div>
                     </div>
 
                 </div>
@@ -115,7 +121,7 @@
 
         <section class="sectionThree">
 
-            <div class="conteiner">
+            <div class="conteiner conteiner__control">
                 <div class="control">
 
                     <h2 class="control__title">online control</h2>
@@ -149,30 +155,28 @@
                 </div>
                 
                 <form class="control__bloke" action="#">
-                    
                     <div class="control__form">
                         <div class="control__form-name">
                             <p class="control__form-title">Name</p>
                             <input type="text" class="control__input" placeholder="What is your name:">
                         </div>
-                        <div>
+                        <div class="control__form-phone">
                             <p class="control__form-title">Phone</p>
                             <input type="tel" class="control__input" placeholder="Your phone number:">
                         </div>
                         <button class="button control__button">Submit</button>
+                        <div class="control__checkbox">
+                            <div class="first-checkbox">
+                                <label class="label">
+                                  <input type="checkbox" class="checkbox" >
+                                  <span class="fake"></span>
+                                  <span class="control__text-check">I agree to the processing of personal data.</span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </form>
-
-                <div class="control__checkbox">
-                    <div class="first-checkbox">
-                        <label class="label">
-                          <input type="checkbox" class="checkbox" >
-                          <span class="fake"></span>
-                          <span class="text">I agree to the processing of personal data.</span>
-                        </label>
-                    </div>
-                </div>
-
+            </div>
             <div class="bloke repair">
                 <div class="repair__title">
                     <h2 class="repair__title-head">TYPES OF REPAIR</h2>
@@ -188,8 +192,6 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="conteiner repair__bloke">
                 <div class="repair__bloke_item">
                     <div class="repair__bloke_item-one">
@@ -344,6 +346,10 @@
                             <li class="bloleFive__leftList-li">High tech</li>
                             <li class="bloleFive__leftList-li">Eclecticism</li>
                         </ul>
+                        <div class="mobile-img blokeFive__mobile-img">
+                            <button class="button__mobile_side"></button>
+                            <button class="button__mobile_side"></button>
+                        </div>
                     </div>
                     <div class="blokeFive__all_rightList">
                         <div class="blokeFive__all_rightList-imgOne"></div>
@@ -440,7 +446,7 @@
                                 <label class="label">
                                 <input type="checkbox" class="checkbox" >
                                 <span class="fake"></span>
-                                <span class="text">I agree to the processing of personal data.</span>
+                                <span class="checkbox__text">I agree to the processing of personal data.</span>
                                 </label>
                             </div>
                         </div>
@@ -453,11 +459,10 @@
 
             <div class="sectionSeven__location">
                 <p class="sectionSeven__location_adres">
-                    Rostov-on-Don, Nansen St., 239 Shopping Center
-                    Decorum Tel +7 (928) 768 32 29
+                    Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
                 </p>
                 <div class="sectionSeven__location_icons">
-                    <a href="#"><div class="sectionSeven__location_icons-left"></div></a>
+                    <a href="#"><div class="sectionSeven__location_icons-left "></div></a>
                     <a href="#"><div class="sectionSeven__location_icons-right"></div></a>
                 </div>
             </div>

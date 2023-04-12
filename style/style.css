@@ -33,7 +33,6 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #E3B873;
-
     min-width: 179.74px;
     margin-right: 77px;
 }
@@ -96,6 +95,7 @@
 .sectionOne{
     background-image: url(../img/image\ 4.3.jpg);
     background-size: cover;
+    background-position: center;
     padding-top: 190px;
     padding-left: 85px;
     height: 707px;
@@ -166,7 +166,12 @@
     border-radius: 2px;
     box-shadow: none;
 }
-
+.desktop-text{
+    display: inline;
+}
+.mobile-text{
+    display: none;
+}
 /*Вторая секция*/
 /*---Правая секция---*/
 
@@ -238,6 +243,7 @@
     grid-template-columns: 1fr 1.5fr;
     margin-top: 42px;
     row-gap: 34px;
+    column-gap: 50px;
 }
 
 .location-item_title {
@@ -259,6 +265,12 @@
     line-height: 21px;
     margin-top: 9px;
     color: #FFFFFF;
+}
+
+.img {
+    background-image: url(../img/image\ 2.1.png);
+    min-width: 679px;
+    min-height: 482px;
 }
 
 /*Стрелки*/
@@ -329,6 +341,7 @@
 .progects-row__right {
     margin-left: 29px;
 }
+
 
 /*Секция Три*/
 
@@ -463,8 +476,9 @@
 
 .control__form {
     display: flex;
-    justify-content: space-between;
-    min-width: 769px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 769px;
 }
 
 .control__form-title {
@@ -520,6 +534,7 @@
     display: flex;
     justify-content: center;
     margin-top: 37px;
+    min-width: 259px;
 }
 
 .label {
@@ -539,6 +554,7 @@
     background: #E3B873;
     color: #fff;
     justify-content: center;
+    align-self: center;
 }
   
 .fake::before{
@@ -551,12 +567,13 @@
     opacity: 1;
 }
 
-.text {
+.control__text-check {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 163.68%;
     color: #181818;
+    margin: 0;
 }
 
 .repair__title {
@@ -627,14 +644,17 @@
 
 .repair__bloke_item:first-child{
     background-image: url(../img/image1.jpg);
+    background-repeat: no-repeat;
 }
 
 .repair__bloke_item:nth-child(2){
     background-image: url(../img/image\ 2.jpg);
+    background-repeat: no-repeat;
 }
 
 .repair__bloke_item:last-child{
     background-image: url(../img/image\ 3.jpg);
+    background-repeat: no-repeat;
 }
 
 .repair__bloke_item-one{
@@ -924,6 +944,9 @@
     box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
 }
 
+
+/*Блок пятый*/
+
 .blokeFive_overlay{
     background-color: rgba(0, 0, 0, 0.75);
 }
@@ -948,7 +971,7 @@
 }
 
 .blokeFive__all-leftList {
-
+    display: grid;
 }
 
 .blokeFive__all-head{
@@ -1249,7 +1272,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 58px;
-    row-gap: 48px;
+    row-gap: 45px;
     grid-template-areas: "head head" "name phone" "question question" "checkbox checkbox" "button button";
     justify-content: center;
     align-items: start;
@@ -1338,7 +1361,6 @@
     text-align: center;
     text-transform: uppercase;
     color: #E3B873;
-    text-align: center;
     max-width: 589px;
 }
 
@@ -1374,8 +1396,7 @@
     background-image: url(../img/map.png);
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    height: 100%;
+    min-width: 935px;
     z-index: 1;
 }
 
@@ -1387,5 +1408,4 @@
 
 .footer{
     min-height: 133px;
-
 }
