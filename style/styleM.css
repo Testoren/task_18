@@ -241,6 +241,7 @@
         min-width: 340px;
         background: none;
         border-bottom: 1px solid #FFFFFF;
+        color: #FFFFFF;
     }
     .control__input::placeholder {
         font-size: 14px;
