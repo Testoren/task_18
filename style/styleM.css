@@ -84,10 +84,13 @@
 }
 @media(max-width: 1256px) {
 
+    
+
     .block__progects{
         display: flex;
         justify-content: center;
         min-height: 720px;
+
     }
 
     .conteiner__progects{
@@ -97,6 +100,7 @@
         max-width: 340px;
         margin: 0;
         padding: 0;
+ 
     }
     .about__projects{
         display: grid;
@@ -163,9 +167,11 @@
     }
 }
 @media(max-width: 1256px){
+    
     .conteiner__control{
         max-width: none;
         max-height: 100%;
+        margin-top: -1px;
         background-color: #131313;
     }
     .control{

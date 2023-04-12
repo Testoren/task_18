@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+body{
+    display: grid;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -89,7 +93,9 @@
 }
 
 /*блок main*/
-
+main{
+    display: grid;
+}
 /*Первая секция*/
 
 .sectionOne{
@@ -174,6 +180,7 @@
 }
 /*Вторая секция*/
 /*---Правая секция---*/
+
 
 .block__progects {
     background-color: #131313;
