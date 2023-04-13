@@ -266,6 +266,7 @@
     .repair__bloke{
         display: grid;
         row-gap: 79px;
+        margin-top: 40px;
     }
     .repair__bloke_item{
         min-width: 340px;
