@@ -7,30 +7,23 @@
     text-decoration: none;
 }
 
-body{
-    display: grid;
-}
-
-.header {
+.menu {
     display: flex;
     align-items: center;
     background-color: #131313;
     max-height: 83px;
 }
 
-.header-content{
+.menu__content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 90px;
-}
-
-.conteiner  {
     max-width: 1256px;
     margin: 0 auto;
 }
 
-.logo {
+.menu__logo a{
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
@@ -41,14 +34,14 @@ body{
     margin-right: 77px;
 }
 
-.header-navigation {
+.menu__navigation {
     display: flex;
     justify-content: space-between;
     width: 580px;
     margin-right: 47px;
 }
 
-.header-navigation__item a {
+.menu__item a {
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
@@ -56,17 +49,17 @@ body{
     color: #FFFFFF;
 }
 
-.header-navigation__item:first-child a {
+.menu__item:first-child a {
     color: #E3B873;
 }
 
-.number {
+.menu__number {
     width: 126px;
     text-align: right;
     margin-right: 45px;
 }
 
-.number a{
+.menu__number a{
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
@@ -92,11 +85,14 @@ body{
     width: 161px;
 }
 
-/*блок main*/
-main{
-    display: grid;
-}
+
+
 /*Первая секция*/
+
+.conteiner{
+    max-width: 1256px;
+    margin: 0 auto;
+}
 
 .sectionOne{
     background-image: url(../img/image\ 4.3.jpg);
@@ -113,7 +109,7 @@ main{
     z-index: 1;
 }
 
-.overlay {
+.conteiner__overlay {
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
@@ -122,7 +118,7 @@ main{
     left: 0;
 }
 
-.title, .title span {
+.conteiner__title, .conteiner__title span {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -134,11 +130,11 @@ main{
     min-height: 105px;
 }
 
-.title span {
+.conteiner__title span {
     color: #E3B873;
 }
 
-.sub_title {
+.conteiner__subTitle {
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -149,7 +145,7 @@ main{
     margin-top: 19px;
 }
 
-.button__main{
+.conteiner__button{
     font-family: 'Nunito Sans';
     font-style: italic;
     font-weight: 400;
@@ -161,7 +157,6 @@ main{
     margin-right: 18px;
     min-width: 207px;
     min-height: 51px;
-    background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
     border-radius: 2px;
 }
@@ -172,22 +167,23 @@ main{
     border-radius: 2px;
     box-shadow: none;
 }
-.desktop-text{
+.conteiner__button_desktop{
     display: inline;
+    color: white;
 }
-.mobile-text{
+.conteiner__button_mobile{
     display: none;
+    color: white;
 }
+
 /*Вторая секция*/
-/*---Правая секция---*/
 
-
-.block__progects {
+.sectionTwo {
     background-color: #131313;
     min-height: 1074px;
 }
 
-.conteiner__progects {
+.conteiner__block {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1171px;
@@ -195,14 +191,14 @@ main{
     padding-top: 107px;
 }
 
-.head-nav {
+.conteiner__headNav {
     display: flex;
     justify-content: space-between;
     max-width: 623px;
     margin-bottom: 52.68px;
 }
 
-.head-nav__item a {
+.conteiner__headItem a {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -213,18 +209,13 @@ main{
     color: rgba(255, 255, 255, 0.3);
 }
 
-.head-nav__item:first-child a {
+.conteiner__headItem:first-child a {
     color: #E3B873;
     border-bottom: 1px solid #E3B873;
     padding-bottom: 6.68px;
 }
 
-.about__projects{
-    display: grid;
-    padding-top: 68px;
-}
-
-.head-title {
+.conteiner__blockTitle {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -236,7 +227,7 @@ main{
     color: #E3B873;
 }
 
-.head-subtitle {
+.conteiner__blockSubtitle {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -245,7 +236,7 @@ main{
     color: #FFFFFF;
 }
 
-.location {
+.conteiner__blockLocation {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     margin-top: 42px;
@@ -253,7 +244,7 @@ main{
     column-gap: 50px;
 }
 
-.location-item_title {
+.conteiner__blockItemTitle {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -264,7 +255,7 @@ main{
     color: #E3B873;
 }
 
-.location-item_subtitle {
+.conteiner__blockItemSubTitle {
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
@@ -274,15 +265,19 @@ main{
     color: #FFFFFF;
 }
 
-.img {
+.conteiner__headImg {
     background-image: url(../img/image\ 2.1.png);
     min-width: 679px;
     min-height: 482px;
 }
 
+.conteiner__blockMobileImg{
+    display: none;
+}
+
 /*Стрелки*/
 
-.progects-row {
+.conteiner__blockRow {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -291,13 +286,13 @@ main{
     max-height: 13px;
 }
 
-.progects-row__circle {
+.conteiner__circle {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.progects-row__circle_item {
+.conteiner__circleItem {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 30px;
     width: 10px;
@@ -305,15 +300,15 @@ main{
     margin-right: 17px;
 }
 
-.progects-row__circle_item:nth-child(1) {
+.conteiner__circleItem:nth-child(1) {
     background: #FFFFFF;
 }
 
-.progects-row__circle_item:nth-child(3) {
+.conteiner__circleItem:nth-child(3) {
     margin-right: 0;
 }
 
-.button__row-left, .button__row-right{
+.conteiner__button_left, .conteiner__button_right{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -327,7 +322,7 @@ main{
     position: relative;
 }
 
-.button__row-left::before, .button__row-right::before {
+.conteiner__button_left::before, .conteiner__button_right::before {
     content: '';
     position: absolute;
     left: 0;
@@ -338,15 +333,13 @@ main{
     background-repeat: no-repeat;
 }
 
-.button__row-right{
+.conteiner__button_right{
     transform: scale(-1, 1);
+    margin-left: 29px;
 }
 
-.progects-row__left {
+.conteiner__button_left {
     margin-right: 29px;
-}
-.progects-row__right {
-    margin-left: 29px;
 }
 
 
@@ -356,13 +349,13 @@ main{
     min-height: 1466px;
 }
 
-.control {
+.conteiner__control {
     display: grid;
     justify-content: center;
     margin-top: -326px;
 }
 
-.control__title {
+.conteiner__titleIII {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -373,7 +366,7 @@ main{
     color: #FFFFFF;
 }
 
-.control__logo {
+.conteiner__logo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
@@ -384,7 +377,7 @@ main{
     position: relative;
 }
 
-.control__logo_line {
+.conteiner__logoLine {
     width: 32px;
     height: 1px;
     background: #E3B873;
@@ -392,13 +385,13 @@ main{
 }
 
 
-.control__logo_camera {
+.conteiner__logoCamera {
     background-image: url(../img/VectorCamera.svg);
     width: 32px;
     height: 28px;
 }
 
-.control__video {
+.conteiner__video {
     background-image: url(../img/image\ 6.png);
     background-repeat: no-repeat;
     margin-top: 31px;
@@ -410,7 +403,7 @@ main{
     position: relative;
 }
 
-.control__logo_camera-play {
+.conteiner__logoCameraImgCircle {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -422,7 +415,7 @@ main{
     z-index: 1;
 }
 
-.control__logo_camera-img{
+.conteiner__logoCameraImg{
     position: absolute;
     background: none;
     min-width: 28px;
@@ -432,7 +425,7 @@ main{
     background-repeat: no-repeat;
 }
 
-.control__video_overlay {
+.conteiner__videoOverlay {
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
@@ -441,16 +434,7 @@ main{
     left: 0;
 }
 
-.control__line{
-
-    max-width: 55px;
-    min-height: 13px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-.control__line_img {
+.conteiner__lineImg {
     margin: 62px auto 0;
     max-width: 55px;
     min-height: 1px;
@@ -458,13 +442,13 @@ main{
     border-radius: 30px;
 }
 
-.control__text {
+.conteiner__text {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
 
-.control__text_about {
+.conteiner__textAbout {
     max-width: 681px;
     max-height: 131px;
     font-style: normal;
@@ -475,20 +459,20 @@ main{
     color: #363636;
 }
 
-.control__bloke {
+.conteiner__bloke {
     display: flex;
     justify-content: center;
     margin-top: 95px;
 }
 
-.control__form {
+.conteiner__form {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 769px;
 }
 
-.control__form-title {
+.conteiner__formTitle {
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -497,7 +481,7 @@ main{
     color: rgba(54, 54, 54, 0.5);
 }
 
-.control__input {
+.conteiner__input {
     border: none;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     padding-bottom: 5px;
@@ -509,9 +493,10 @@ main{
     font-size: 14px;
     line-height: 23px;
     color: #363636;
+    outline: none;
 }
 
-.control__input::placeholder {
+.conteiner__input::placeholder {
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
@@ -520,40 +505,35 @@ main{
     color: #363636;
 }
 
-.control__button{
+.conteiner__buttonForm {
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 27px;
-    /* identical to box height */
-
     text-align: center;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
     min-width: 200px;
     min-height: 51px;
     box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
     border-radius: 2px;
 }
 
-.control__checkbox {
+.conteiner__checkbox {
     display: flex;
     justify-content: center;
     margin-top: 37px;
     min-width: 259px;
 }
 
-.label {
+.conteiner__label {
     display: flex;
     cursor: pointer;
 }
 
-.checkbox{
+.conteiner__checkboxInput{
     display: none;
 }
 
-.fake{
+.conteiner__fake{
     display: inline-flex;
     width: 18px;
     height: 18px;
@@ -563,33 +543,44 @@ main{
     justify-content: center;
 }
   
-.fake::before{
+.conteiner__fake::before{
     content:"\2714";
     opacity: 0;
     transition: .2s;
 }
   
-.checkbox:checked + .fake::before{
+.conteiner__checkboxInput:checked + .conteiner__fake::before{
     opacity: 1;
 }
 
-.control__text-check {
+.conteiner__textCheck{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 163.68%;
-    color: #181818;
+}
+
+.conteiner__textCheck_white{
+    color: white;
+}
+
+.conteiner__fake_black {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 163.68%;
+    color: white;
     margin: 0;
     padding: 0;
 }
 
-.repair__title {
+.conteiner__repairTitleTop{
     display: flex;
     justify-content: center;
     margin-top: 65px;
 }
 
-.repair__title-head {
+.conteiner__repairTitleTopHead {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 600;
@@ -597,35 +588,15 @@ main{
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
-    
     color: #181818;
 }
 
-.repair__logo {
+.conteiner__repairLogo {
     display: flex;
     justify-content: center;
 }
 
-.repair__logo_item {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-    max-width: 114px;
-    grid-gap: 10px;
-    margin-top: 13px;
-    position: relative;
-}
-
-.control__logo_line {
-    width: 32px;
-    height: 1px;
-    background: #E3B873;
-    border-radius: 30px;
-}
-
-.repair__logo_img {
+.conteiner__logoImgHammer {
     background-image: url(../img/option.svg);
     background-repeat: no-repeat;
     width: 30px;
@@ -634,7 +605,7 @@ main{
 
 /*блок с repair*/
 
-.repair__bloke {
+.conteiner__repairBloke {
     display: flex;
     justify-content: center;
     max-width: 1236px;
@@ -642,42 +613,42 @@ main{
     margin-top: 31px;
 }
 
-.repair__bloke_item {
+.conteiner__blokeItem {
     min-width: 392px;
     max-height: 421px;
     display: flex;
     justify-content: center;
 }
 
-.repair__bloke_item:first-child{
+.conteiner__blokeItem:first-child{
     background-image: url(../img/image1.jpg);
     background-repeat: no-repeat;
 }
 
-.repair__bloke_item:nth-child(2){
+.conteiner__blokeItem:nth-child(2){
     background-image: url(../img/image\ 2.jpg);
     background-repeat: no-repeat;
 }
 
-.repair__bloke_item:last-child{
+.conteiner__blokeItem:last-child{
     background-image: url(../img/image\ 3.jpg);
     background-repeat: no-repeat;
 }
 
-.repair__bloke_item-one{
+.conteiner__blokeItemOne{
     margin-top: 294px;
     min-width: 330px;
     max-height: 286px;
 }
 
-.repair__bloke_item-two{
+.conteiner__blokeItemTwo{
     padding: 25px 0 0 35px;
     min-height: 286px;
     background: #FFFFFF;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 
-.repair__bloke_item-head{
+.conteiner__blokeItemHead{
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 600;
@@ -686,7 +657,7 @@ main{
     color: #363636;
 }
 
-.repair__bloke_item-unit{
+.conteiner__blokeItemUnit{
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -695,16 +666,16 @@ main{
     margin-left: 10px;
 }
 
-.repair__bloke_item-li {
+.conteiner__blokeItemLi {
     margin-top: 7px;
 }
 
-.repair__bloke_item-list li{
+.conteiner__blokeItemList li{
     list-style: none;
     list-style-position: inside;
 }
 
-.repair__bloke_item-list li::before{
+.conteiner__blokeItemList li::before{
     content: '';
     list-style-type:disc;
     color: #959595;
@@ -714,14 +685,13 @@ main{
     margin: 0 0 0 -10px;
 }
 
-.repair__bloke_item-button{
+.conteiner__blokeItemButton{
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+
     margin-top: -27px;
     margin-bottom: 124px;
     padding: 0;
@@ -732,21 +702,19 @@ main{
 
 /*секция четвертая*/
 
-.sectionFor {
-    margin-top: 120px;
-}
-
-.block__conteiner{
+.conteiner__blockFore{
     margin-bottom: 242px;
+    margin-top: 313px;
 }
 
-.block__conteiner_all{
+.conteiner__blockAll{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 131px;
     min-height: 725px;
 }
 
-.block__conteiner_all-left {
+.conteiner__blockAllLeft {
     position: relative;
     background-image: url(../img/back3.png);
     background-repeat: no-repeat;
@@ -754,7 +722,7 @@ main{
     min-height: 645px;
 }
 
-.block__conteiner_all-ol{
+.conteiner__blockAllOl{
     display: flex;
     flex-flow: row wrap;
     align-content: space-between;
@@ -767,7 +735,7 @@ main{
     counter-reset: my-counter;
 }
 
-.block__conteiner_all-list{
+.conteiner__blockAllList{
     display: grid;
     grid-template-columns: 50px 375px;
     column-gap: 10px;
@@ -782,7 +750,7 @@ main{
     min-width: 375px;
 }
 
-.block__conteiner_all-ol li::before {
+.conteiner__blockAllOl li::before {
     content: '0' counter(my-counter);
     counter-increment: my-counter;
     color: white;
@@ -804,7 +772,7 @@ main{
     align-items: center;
 }
 
-.block__conteiner_all-right{
+.conteiner__blockAllRight{
     display: grid;
     justify-content: end;
     align-items: center;
@@ -812,7 +780,7 @@ main{
     margin-top: 114px;
 }
 
-.block__conteiner_all-cub{
+.conteiner__blockAllCub{
     display: flex;
     justify-content: center;
     align-items: start;
@@ -822,21 +790,13 @@ main{
     min-width: 506px;
 }
 
-.block__conteiner_all-content{
+.conteiner__blockAllContent{
     display: grid;
     justify-content: center;
     grid-template-columns: 408px;
-}
+} 
 
-.block__conteiner_all-forma{
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    margin-top: 39px;
-    min-height: 244px;
-}   
-
-.block__conteiner_all-title{
+.conteiner__blockAllTitle{
     margin-top: 28px;
     font-style: normal;
     font-weight: 400;
@@ -846,7 +806,15 @@ main{
     color: #FFFFFF;
 }
 
-.block__conteiner_all-top{
+.conteiner__blockAllForma{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    margin-top: 39px;
+    min-height: 244px;
+}  
+
+.conteiner__blockAllTop{
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -854,11 +822,11 @@ main{
     color: rgba(255, 255, 255, 0.5);
 }
 
-.block__conteiner_all-contact{
+.conteiner__blockAllContact{
     min-width: 100%;
 }
 
-.block__conteiner_all-input{
+.conteiner__blockAllInput{
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     background: none;
@@ -870,9 +838,10 @@ main{
     color: #FFFFFF;
     min-width: 100%;
     min-height: 24px;
+    outline: none;
 }
 
-.block__conteiner_all-input::placeholder{
+.conteiner__blockAllInput::placeholder{
     color: white;
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -882,28 +851,19 @@ main{
     color: #FFFFFF;
 }
 
-.checkbox__text{
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 163.68%;
-    color: #FFFFFF;
-}
-
-.block__conteiner_all-checkbox{
+.conteiner__blockAllCheckbox{
     display: grid;
     grid-template-columns: 408px;
     margin-top: 17px;
 }
 
-.block__conteiner_all-submit{
+.conteiner__blockConteinerAllSubmit{
     display: grid;
     justify-content: end;
     margin-top: 35px;
 }
 
-.block__conteiner_all-button{
+.conteiner__blockConteinerAllButton{
     min-width: 213px;
     min-height: 51px;
     background: #E3B873;
@@ -913,11 +873,9 @@ main{
     font-size: 13px;
     line-height: 21px;
     text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
 }
 
-.block__conteiner_save{
+.conteiner__blockConteinerSave{
     display: flex;
     justify-content: left;
     align-self: center;
@@ -925,7 +883,7 @@ main{
     margin-left: 35px;
 }
 
-.block__conteiner_savetext{
+.conteiner__blockConteinerSaveText{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -938,7 +896,7 @@ main{
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
 
-.block__conteiner_savetext::before{
+.conteiner__blockConteinerSaveText::before{
     content: url(../img/GroupPig.svg);
     display: flex;
     justify-content: center;
@@ -954,12 +912,9 @@ main{
 
 /*Блок пятый*/
 
-.blokeFive_overlay{
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.section__blokeFive{
+.sectionFive{
     background-image: url(../img/image\ 5.1.png);
+    box-sizing: border-box;
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -967,7 +922,7 @@ main{
     min-height: 864px;
 }
 
-.blokeFive__all{
+.conteiner__blokeFiveAll{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -977,44 +932,47 @@ main{
     min-height: 864px;
 }
 
-.blokeFive__all-leftList {
+.conteiner__blokeFiveAllLeftList{
     display: grid;
 }
 
-.blokeFive__all-head{
+.conteiner__blokeFiveAllHead{
     font-weight: 600;
-    text-transform: uppercase;
+    font-size: 27px;
     color: #E3B873;
     margin-bottom: 47px;
 }
 
-.bloleFive__leftList-ul{
+.conteiner__blokeFiveAllLeftListUl{
     max-height: 516px;
 }
 
-.bloleFive__leftList-li{
+.conteiner__blokeFiveAllLeftListLi{
+    margin-bottom: 18px;
+    max-height: 30px;
+}
+
+.conteiner__blokeFiveAllLeftListLi a{
     list-style-type: none;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 38px;
     color: #FFFFFF;
-    margin-bottom: 20px;
-    max-height: 30px;
 }
 
-.bloleFive__leftList-li:first-child {
+.conteiner__blokeFiveAllLeftListLi:first-child a {
     font-style: normal;
     color: #E3B873;
     border-bottom: 1px solid #E3B873;
     width: 151px;
 }
 
-.bloleFive__leftList-li:last-child{
+.conteiner__blokeFiveAllLeftListLi:last-child{
     margin-bottom: 0;
 }
 
-.blokeFive__all_rightList{
+.conteiner__blokeFiveAllRightList{
     display: grid;
     grid-template-columns: 354px 354px;
     grid-template-rows: 257px 257px;
@@ -1026,7 +984,7 @@ main{
     position: relative;
 }
 
-.blokeFive__all_rightList-imgOne{
+.conteiner__blokeFiveAllRightListImgOne{
     background-image: url(../img/one.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -1035,20 +993,20 @@ main{
     margin-top: -41px;
 }
 
-.blokeFive__all_rightList-imgTwo{
+.conteiner__blokeFiveAllRightListImgTwo{
     background-image: url(../img/two.png);
     background-repeat: no-repeat;
     margin-top: -112px;
 }
 
-.blokeFive__all_rightList-imgThree{
+.conteiner__blokeFiveAllRightListImgThree{
     background-image: url(../img/three.png);
     background-repeat: no-repeat;
     min-height: 350px;
     margin-top: 239px;
 }
 
-.blokeFive__all_rightList-imgFor{
+.conteiner__blokeFiveAllRightListImgFor{
     background-image: url(../img/For.png);
     background-repeat: no-repeat;
     margin-top: -112px;
@@ -1062,33 +1020,24 @@ main{
     min-width: 1256px;
 }
 
-.sectionSix__content_box{
+.conteiner__sectionSixContentBox{
     max-width: 376px;
     min-height: 426px;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
 
-.sectionSix__head{
+.conteiner__sectionSixHead{
     margin-top: 110px;
 }
 
-.sectionSix__head_title{
-    text-align: center;
-    margin-bottom: 13px;
-}
-
-.sectionSix__head_blokeIcon{
-    margin: 0 auto;
-}
-
-.sectionSix__head_img{
+.conteiner__heandImg{
     background-image: url(../img/hand.svg);
     background-repeat: no-repeat;
     min-width: 34px;
     min-height: 30px;
 }
 
-.sectionSix__head_subtitle{
+.conteiner__sectionSixSubtitle{
     margin: 24px 0 39px 0;
     text-align: center;
     font-style: normal;
@@ -1099,13 +1048,13 @@ main{
     color: #363636;
 }
 
-.sectionSix__content{
+.conteiner__sectionSixContent{
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.sectionSix__content_left-title{
+.conteiner__sectionSixContentLeftTitle{
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -1122,7 +1071,7 @@ main{
     text-align: left;
 }
 
-.sectionSix__content_left-title::before{
+.conteiner__sectionSixContentLeftTitle::before{
     content: '';
     position: absolute;
     left: 0;
@@ -1148,7 +1097,7 @@ main{
     background-repeat: no-repeat;
 }
 
-.sectionSix__content_left-text{
+.conteiner__sectionSixContentLeftText{
     max-width: 324px;
     margin: 22px auto;
     font-style: normal;
@@ -1158,7 +1107,7 @@ main{
     color: #959595;
 }
 
-.sectionSix__content_button{
+.conteiner__sectionSixButton{
     display: grid;
     grid-template-columns: 135px 158px;
     box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
@@ -1169,7 +1118,7 @@ main{
     margin-top: 70px;
 }
 
-.sectionSix__content_button-text {
+.conteiner__sectionSixButtonText {
     display: grid;
     align-items: center;
     grid-template-rows: 54px;
@@ -1181,14 +1130,17 @@ main{
     position: relative;
     padding-left: 65px;
     text-align: left;
+    background-color: #E3B873;
+    color: white;
+    border: none;
 }
 
-.sectionSix__content_button-text:nth-of-type(2n+1){
+.conteiner__sectionSixButtonText:nth-of-type(2n+1){
     border-right: 1px solid white;
     min-width: 135px;
 }
 
-.sectionSix__content_button-text::before{
+.conteiner__sectionSixButtonText::before{
     content: '';
     position: absolute;
     background: url(../img/days.svg);
@@ -1199,7 +1151,7 @@ main{
     margin-left: 17px;
 }
 
-.sectionSix__content_button-text:nth-of-type(2n+1)::before{
+.conteiner__sectionSixButtonText:nth-of-type(2n+1)::before{
     content: '';
     position: absolute;
     background: url(../img/plosh.svg);
@@ -1219,7 +1171,7 @@ main{
     margin-bottom: -20px;
 }
 
-.sectionSityLeft{
+.sectionSity__Left{
     min-width: 100%;
     min-height: 776px;
     background: url(../img/sity.svg);
@@ -1227,7 +1179,7 @@ main{
 
 }
 
-.sectionSityRight{
+.sectionSity__Right{
     min-width: 100%;
     min-height: 776px;
     background: url(../img/Frame.svg);
@@ -1249,7 +1201,7 @@ main{
     position: relative;
 }
 
-.sectionSeven__cub{
+.conteiner__sectionSevenCub{
     margin: 0 auto;
     display: grid;
     justify-content: center;
@@ -1261,22 +1213,12 @@ main{
     z-index: 1;
 }
 
-.sectionSeven__cub_title{
-    display: flex;
-    justify-content: center;
-    align-self: start;
+.conteiner__repairTitleTopHead_white{
     grid-area: head;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
     color: #FFFFFF;
 }
 
-.sectionSeven__cub_form{
+.conteiner__sectionSevenCubForm{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -1289,15 +1231,15 @@ main{
     max-height: 376px;
 }
 
-.grid-name{
+.conteiner__sectionSevenGridName{
     grid-area: name;
 }
 
-.grid-phone{
+.conteiner__sectionSevenGridPhone{
     grid-area: phone;
 }
 
-.grid-question{
+.conteiner__sectionSevenGridPhoneQuestion{
     grid-area: question;
 }
 
@@ -1309,7 +1251,7 @@ main{
     grid-area: checkbox;
 }
 
-.grid-button{
+.conteiner__sectionSevenSubcubGridButton{
     grid-area: button; 
     min-width: 100%;
     display: flex;  
@@ -1317,7 +1259,7 @@ main{
     align-self: flex-end;
 }
 
-.sectionSeven__cub_form-bloke-name{
+.conteiner__sectionSevenCubFormBlokeName{
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -1326,7 +1268,7 @@ main{
     transform: rotate(-0.07deg)
 }
 
-.sectionSeven__cub_form-bloke-input{
+.conteiner__sectionSevenCubFormBlokeInput{
     background: none;
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -1340,7 +1282,7 @@ main{
     color: #FFFFFF;
 }
 
-.sectionSeven__cub_form-bloke-input::placeholder{
+.conteiner__sectionSevenCubFormBlokeInput::placeholder{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1348,11 +1290,18 @@ main{
     color: #FFFFFF;
 }
 
+.conteiner__sectionSevenSubButton{
+    min-width: 200px;
+    min-height: 51px;
+}
+
 .text{
     color: white;
 }
 
-.sectionSeven__location{
+
+
+.conteiner__sectionSevenLocation{
     display: grid;
     justify-content: center;
     grid-template-rows: 51px 28px;
@@ -1361,7 +1310,7 @@ main{
     z-index: 1;
 }
 
-.sectionSeven__location_adres{
+.conteiner__sectionSevenLocationAdres{
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 600;
@@ -1373,14 +1322,14 @@ main{
     max-width: 589px;
 }
 
-.sectionSeven__location_icons{
+.conteiner__sectionSevenLocationIcons{
     display: grid;
     justify-content: center;
     grid-template-columns: 28px 28px;
     column-gap: 15px;
 }
 
-.sectionSeven__location_icons-left{
+.conteiner__sectionSevenLocationIconsLeft{
     background: url(../img/mail.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -1390,7 +1339,7 @@ main{
     border-radius: 50%;
 }
 
-.sectionSeven__location_icons-right{
+.conteiner__sectionSevenLocationIconsRight{
     background-image: url(../img/insta.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -1400,7 +1349,7 @@ main{
     border-radius: 50%;
 }
 
-.sectionSeven__location_map{
+.conteiner__locationMap{
     margin: 0 auto;
     background-image: url(../img/map.png);
     background-repeat: no-repeat;
